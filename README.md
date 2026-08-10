@@ -150,5 +150,3 @@ Try:
   for genuine multi-device/multi-user behavior.
 - The bundled `AIProvider` is a heuristic mock (no network call, ~350ms
   simulated latency) so the SDK and demo run without any API key.
-# React-Form-Intelligence-SDK
-# React-Form-Intelligence-SDK
