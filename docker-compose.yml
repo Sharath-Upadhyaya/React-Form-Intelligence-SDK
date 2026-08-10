@@ -1,0 +1,14 @@
+services:
+  form-intelligence-demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: formintel-demo
+    ports:
+      # Host 5174 -> container 5173 (host 5173 is already used by another
+      # project's frontend container on this machine).
+      - "5174:5173"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    stdin_open: true
+    tty: true

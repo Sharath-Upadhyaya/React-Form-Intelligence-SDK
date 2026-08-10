@@ -1,0 +1,15 @@
+{
+  "name": "form-intelligence-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build:sdk": "npm run build --workspace=packages/form-intelligence-sdk",
+    "dev:demo": "npm run dev --workspace=apps/demo",
+    "build:demo": "npm run build --workspace=apps/demo",
+    "typecheck": "npm run typecheck --workspace=packages/form-intelligence-sdk && npm run typecheck --workspace=apps/demo"
+  }
+}
